@@ -1,46 +1,38 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
-*,
-*::before,
-*::after {
+/* Сброс базовых стилей и установка box-sizing */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* Основные настройки контейнера страницы */
 body {
+  font-family: var(--main-font);
   margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  font-family: var(--main-font);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* Обнуление отступов для текстовых элементов */
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
+/* Сброс стилей для списков и мультимедийных элементов */
+ul,
 picture {
   margin: 0;
   padding: 0;
 }
+ul {
+  list-style: none;
+}
 
-button,
-a {
+/* Унификация стилей для ссылок и кнопок */
+a, button {
   border: none;
+  background-color: inherit;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   text-decoration: none;
-  background-color: inherit;
 }
