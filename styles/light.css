@@ -3,14 +3,40 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  /* Цвета и фоны */
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
+  --main-title-color: #ffc2e6;
+  --text-color: var(--accent-text-color);
+  --background-color: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+
+  /* Декорации и рамки */
+  --decoration-border-color: var(--accent-text-color);
+  --title-color: var(--accent-text-color);
+  --decorative-element-display: none;
+
+  /* Стили меню и кнопок */
+  --menu-list-color: var(--accent-text-color);
+  --button-active-color: var(--accent-text-color);
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+  --button-focus-color: var(--accent-text-color);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --accent-text-color: #353430;
+    --main-title-color: #ffc2e6;
+    --text-color: var(--accent-text-color);
+    --background-image: url(../images/cover-image-light.png);
+    --decoration-border-color: var(--accent-text-color);
+    --title-color: var(--accent-text-color);
+    --menu-list-color: var(--accent-text-color);
+    --button-active-color: var(--accent-text-color);
+    --decorative-element-display: none;
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --background-color: #fff1f7;
+  }
 }

@@ -7,9 +7,10 @@
 }
 
 body {
+  margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
+  font-family: var(--main-font);
 }
 
 h1,
@@ -35,8 +36,11 @@ picture {
 
 button,
 a {
+  border: none;
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-decoration: none;
+  background-color: inherit;
 }

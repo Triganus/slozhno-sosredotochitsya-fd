@@ -1,4 +1,57 @@
 /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
+  Переменные проекта
+  с переопределениями для разных устройств
 */
+
+:root {
+  /* Основные цвета */
+  --accent-color: #ff0070;
+  --accent-color-transparent: rgba(255, 0, 112, 0.4);
+  --accent-text-color: #000028;
+  --accent-text-color-transparent: rgba(0, 0, 40, 0.4);
+  --main-title-color: #db00ff;
+  --text-color: #f1b2ce;
+  --background-color: var(--accent-text-color);
+
+  /* Шрифты */
+  --main-font: "IBM Plex mono", monospace;
+  --font-size-base: 18px;
+  --line-height-base: 130%;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Изображения и эффекты */
+  --background-image: url(../images/cover-image-dark.png);
+  --shadow: 4px 4px 0 var(--accent-color);
+  --shadow-small: 2px 2px 0 var(--accent-color);
+
+  /* Декоративные элементы и меню */
+  --decoration-border-color: var(
+    --accent-color
+  ); /* Рамка декоративных элементов */
+  --menu-list-color: var(--accent-color); /* Цвет элементов меню */
+  --title-color: var(--accent-color); /* Цвет заголовков секций */
+  --button-active-color: var(--accent-color);
+  --button-hover-color: var(--accent-color-transparent);
+  --button-focus-color: var(--accent-color);
+  --decorative-element-display: block; /* Отображение для темной темы */
+
+  /* Отступы */
+  --space-s: 10px;
+  --space-m: 20px;
+  --space-l: 40px;
+
+  /* Параметры экрана */
+  --screen-sm: 375px;
+  --screen-md: 768px;
+  --screen-diff-sm-md: 393; /* 768px - 375px */
+  --screen-diff-md-lg: 256; /* 1024px - 768px */
+
+  
+  --fluid-ratio-sm-md: (
+    (100vw - var(--screen-sm)) / var(--screen-diff-sm-md)
+  ); /* ((100vw - 375px) / 393) */
+  --fluid-ratio-md-lg: (
+    (100vw - var(--screen-md)) / var(--screen-diff-md-lg)
+  ); /* ((100vw - 768px) / 256) */
+}
