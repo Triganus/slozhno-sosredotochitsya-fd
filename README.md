@@ -1,0 +1,1 @@
+https://github.com/Triganus/slozhno-sosredotochitsya-fd Проект "Сложно сосредоточиться" поможет вам познать дзен и научит вас легкости в работе и жизни !
