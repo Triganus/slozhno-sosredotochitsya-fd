@@ -15,6 +15,8 @@
   position: relative;
   display: grid;
   padding: 0 var(--space-s);
+  height: 100vh;
+  min-height: 668px;
 }
 
 /* Декорированная зона */
@@ -264,6 +266,8 @@
 
 /* Стили подвала */
 .footer {
+  height: 100vh;
+  min-height: 668px;
   position: relative;
   padding: clamp(286px, calc(286px + (177 * var(--fluid-ratio-sm-md))), 463px)
     clamp(14px, calc(14px + (190 * var(--fluid-ratio-sm-md))), 204px)
@@ -415,3 +419,8 @@
     padding-inline-start: 0;
   }
 }
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 2px solid #353430 
+}
+
