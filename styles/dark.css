@@ -41,3 +41,7 @@
     --decorative-element-display: block;
   }
 }
+
+:root.theme-auto .header__theme-menu-button:focus-visible:not(.header__theme-menu-button_active) {
+  border-block-end-color: #FF0070;
+}
