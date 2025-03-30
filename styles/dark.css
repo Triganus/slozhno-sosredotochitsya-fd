@@ -35,13 +35,10 @@
     --decoration-border-color: var(--accent-color);
     --title-color: var(--accent-color);
     --menu-list-color: var(--accent-color);
+    --button-focus-color: #ff0070; 
     --button-active-color: var(--accent-color);
     --button-hover-color: var(--accent-color-transparent);
     --button-focus-color: var(--accent-color);
     --decorative-element-display: block;
   }
-}
-
-:root.theme-dark {
-  --button-focus-color: #ff0070; 
 }

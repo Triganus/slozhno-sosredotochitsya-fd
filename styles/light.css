@@ -36,11 +36,8 @@
     --menu-list-color: var(--accent-text-color);
     --button-active-color: var(--accent-text-color);
     --decorative-element-display: none;
+    --button-focus-color: #353430; 
     --button-hover-color: rgba(50, 49, 45, 0.4);
     --background-color: #fff1f7;
   }
-}
-
-:root.theme-light {
-  --button-focus-color: #353430; 
 }
