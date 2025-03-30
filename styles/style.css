@@ -133,13 +133,6 @@
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
   border-color: var(--button-hover-color);
 }
-.header__theme-menu-button:focus-visible:not(
-    .header__theme-menu-button_active
-  ) {
-  border-block-end-color: var(--button-focus-color);
-  outline: none;
-}
-
 /* Заголовки и описание шапки */
 .header__title {
   margin-block-start: clamp(
@@ -462,6 +455,7 @@
     .header__theme-menu-button_active
   ) {
   border-block-end-color: var(--button-focus-color);
+  outline: none;
 }
 
 @media (min-width: 768px) and (max-width: 1019px) and (max-height: 668px) {

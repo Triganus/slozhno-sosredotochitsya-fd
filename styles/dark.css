@@ -38,7 +38,6 @@
     --button-focus-color: #ff0070; 
     --button-active-color: var(--accent-color);
     --button-hover-color: var(--accent-color-transparent);
-    --button-focus-color: var(--accent-color);
     --decorative-element-display: block;
   }
 }
