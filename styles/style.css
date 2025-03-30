@@ -458,8 +458,10 @@
   }
 }
 
-.header__theme-menu-button:focus-visible {
-  border-bottom: 2px solid #353430;
+.header__theme-menu-button:focus-visible:not(
+    .header__theme-menu-button_active
+  ) {
+  border-block-end-color: var(--button-focus-color);
 }
 
 @media (min-width: 768px) and (max-width: 1019px) and (max-height: 668px) {
@@ -479,5 +481,17 @@
 @media (min-width: 768px) and (max-width: 1019px) and (max-height: 668px) {
   .header__theme-menu {
     margin-block-start: 50px; /* Увеличиваем отступ сверху */
+  }
+}
+
+/* Правила для auto-темы */
+:root.theme-auto {
+  /* По умолчанию – для светлой системы */
+  --button-focus-color: #353430;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    --button-focus-color: #ff0070;
   }
 }

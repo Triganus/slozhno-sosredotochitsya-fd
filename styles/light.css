@@ -41,6 +41,6 @@
   }
 }
 
-:root.theme-auto .header__theme-menu-button:focus-visible {
-  border-bottom: 2px solid #353430;
+:root.theme-light {
+  --button-focus-color: #353430; 
 }

@@ -42,6 +42,6 @@
   }
 }
 
-:root.theme-auto .header__theme-menu-button:focus-visible:not(.header__theme-menu-button_active) {
-  border-block-end-color: #FF0070;
+:root.theme-dark {
+  --button-focus-color: #ff0070; 
 }
