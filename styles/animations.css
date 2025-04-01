@@ -1,0 +1,125 @@
+/* Базовые анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+/* Классы анимаций */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.4s ease-out forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.4s ease-in forwards;
+}
+
+/* Анимация перехода темы */
+.theme-transition {
+  transition: background-color 0.5s ease-in-out,
+              color 0.5s ease-in-out,
+              border-color 0.5s ease-in-out,
+              box-shadow 0.5s ease-in-out;
+}
+
+/* Анимация для кнопок */
+.header__theme-menu-button {
+  transition: transform 0.2s ease-in-out,
+              opacity 0.2s ease-in-out;
+}
+
+.header__theme-menu-button:hover {
+  transform: scale(1.05);
+}
+
+.header__theme-menu-button:active {
+  transform: scale(0.95);
+}
+
+/* Анимация для изображений в галерее */
+.gallery__img {
+  transition: transform 0.3s ease-in-out,
+              filter 0.3s ease-in-out;
+}
+
+.gallery__img:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+}
+
+/* Анимация для заголовков */
+.section__title,
+.section__subtitle {
+  transition: transform 0.3s ease-in-out,
+              opacity 0.3s ease-in-out;
+}
+
+.section__title:hover,
+.section__subtitle:hover {
+  transform: translateX(5px);
+}
+
+/* Анимация для ссылок */
+.section__link {
+  transition: color 0.2s ease-in-out,
+              text-decoration-color 0.2s ease-in-out;
+}
+
+.section__link:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Анимация для декоративных элементов */
+.decorated-zone::before,
+.decorated-zone::after {
+  transition: transform 0.3s ease-in-out,
+              opacity 0.3s ease-in-out;
+}
+
+.decorated-zone:hover::before,
+.decorated-zone:hover::after {
+  transform: scale(1.1);
+  opacity: 0.8;
+} 

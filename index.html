@@ -13,6 +13,9 @@
   <meta name="author" content="Your Name" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#000028" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Сложно сосредоточиться" />
@@ -20,11 +23,19 @@
   <meta property="og:type" content="article" />
   <meta property="og:image" content="./images/sunset.png" />
   <meta property="og:url" content="https://your-domain.com" />
+  <meta property="og:site_name" content="Сложно сосредоточиться" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="./fonts/fonts.css" as="style" />
+  <link rel="preload" href="./styles/globals.css" as="style" />
+  <link rel="preload" href="./images/sunset.png" as="image" />
 
   <!-- Иконки -->
   <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   <link rel="apple-touch-icon" href="./images/favicon.ico" />
+  <link rel="mask-icon" href="./images/favicon.svg" color="#000028" />
 
   <!-- Стили -->
   <link rel="stylesheet" href="./fonts/fonts.css" />
@@ -33,6 +44,7 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/dark.css" />
   <link rel="stylesheet" href="./styles/light.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
 
   <title>Сложно сосредоточиться</title>
 </head>
