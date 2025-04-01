@@ -10,7 +10,7 @@
   --accent-text-color: #000028;
   --main-title-color: #db00ff;
   --text-color: #f1b2ce;
-  --background-color: var(--accent-text-color);
+  --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
 
   /* Декоративные элементы и оформление */
@@ -30,12 +30,12 @@
     --accent-text-color: #000028;
     --main-title-color: #db00ff;
     --text-color: #f1b2ce;
-    --background-color: var(--accent-text-color);
+    --background-color: #000028;
     --background-image: url(../images/cover-image-dark.png);
     --decoration-border-color: var(--accent-color);
     --title-color: var(--accent-color);
     --menu-list-color: var(--accent-color);
-    --button-focus-color: #ff0070;
+    --button-focus-color: var(--accent-color);
     --button-active-color: var(--accent-color);
     --button-hover-color: var(--accent-color-transparent);
     --decorative-element-display: block;
