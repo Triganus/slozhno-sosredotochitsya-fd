@@ -6,31 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Почему сложно сосредоточиться и что с этим делать" />
   
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Статья о том, почему сложно сосредоточиться и как улучшить концентрацию внимания" />
-  <meta name="keywords" content="концентрация, внимание, продуктивность, фокус, медитация" />
-  <meta name="author" content="Your Name" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#000028" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Сложно сосредоточиться" />
-  <meta property="og:description" content="Что делать, когда не можешь делать ничего. Или почему нам так сложно сконцентрироваться, особенно когда очень надо" />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="./images/sunset.png" />
-  <meta property="og:url" content="https://your-domain.com" />
-  <meta property="og:site_name" content="Сложно сосредоточиться" />
-  <meta property="og:locale" content="ru_RU" />
-
-  <!-- Preload Critical Resources -->
-  <link rel="preload" href="./fonts/fonts.css" as="style" />
-  <link rel="preload" href="./styles/globals.css" as="style" />
-  <link rel="preload" href="./images/sunset.png" as="image" />
-
   <!-- Иконки -->
   <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
@@ -80,9 +57,10 @@
         надо
       </p>
     </div>
+    <a href="#main-content" class="visually-hidden">Перейти к основному содержимому</a>
   </header>
 
-  <main class="main">
+  <main class="main" id="main-content" tabindex="-1">
     <section class="section section--why">
       <h2 class="section__title">Почему сосредоточиться так сложно</h2>
       <ul class="section__list">
@@ -93,7 +71,7 @@
             важные. Где же легендарная многозадачность, когда она так нужна
             вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
             её просто не существует. Исследователи
-            <a class="section__link" href="#">выяснили</a>, что мозгу тяжело
+            <a class="section__link" href="#" aria-label="Ссылка на исследование о многозадачности">выяснили</a>, что мозгу тяжело
             концентрироваться даже на двух делах одновременно. А когда в поле
             внимания попадает несколько важных задач, организм паникует и
             выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
@@ -199,7 +177,7 @@
           </h4>
           <p class="section__text">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-            <a class="section__link" href="#">показал</a>, что созерцание
+            <a class="section__link" href="#" aria-label="Ссылка на эксперимент о влиянии природы на концентрацию">показал</a>, что созерцание
             природы повышает концентрацию, в то время как после просмотра
             городских пейзажей она наоборот понижается. Можно совместить
             прогулку с физическими упражнениями или бегом — так в мозг

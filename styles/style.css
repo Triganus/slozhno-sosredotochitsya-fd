@@ -9,6 +9,9 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  color: var(--text-color);
+  overflow-x: hidden; /* Предотвращение горизонтальной прокрутки */
+  scroll-behavior: smooth; /* Плавная прокрутка */
 }
 
 /* Шапка сайта */
@@ -18,6 +21,7 @@
   padding: 0 var(--space-s);
   height: 100vh;
   min-height: 668px;
+  will-change: transform; /* Оптимизация для анимаций */
 }
 
 /* Декорированная зона */
@@ -29,6 +33,7 @@
   content: "";
   position: absolute;
   inline-size: 25px;
+  will-change: transform, opacity; /* Оптимизация для анимаций */
 }
 
 /* Верхний декоративный элемент */
@@ -92,6 +97,7 @@
   inset-block-start: 50%;
   inline-size: 10px;
   block-size: 10px;
+  will-change: opacity; /* Оптимизация для анимаций */
 }
 
 /* Текст декора шапки */
@@ -125,6 +131,7 @@
   line-height: 1;
   text-transform: lowercase;
   cursor: pointer;
+  user-select: none; /* Предотвращение выделения текста */
 }
 .header__theme-menu-button_active {
   border-color: var(--button-active-color);
@@ -141,6 +148,7 @@
     173px
   );
   text-shadow: var(--shadow);
+  will-change: transform; /* Оптимизация для анимаций */
 }
 .main-title {
   color: var(--main-title-color);
@@ -488,4 +496,25 @@
   :root.theme-auto {
     --button-focus-color: #ff0070;
   }
+}
+
+/* Стиль для изображений с ошибкой загрузки */
+.image-error {
+  border: 1px dashed var(--accent-color);
+  background-color: var(--accent-color-transparent);
+  filter: grayscale(0.5);
+}
+
+/* Класс для визуально скрытых элементов, сохраняющий доступность */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
