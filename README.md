@@ -1,6 +1,6 @@
 # Проект "Сложно сосредоточиться"
 
-Репозиторий: [https://github.com/Triganus/slozhno-sosredotochitsya-fd](https://github.com/Triganus/slozhno-sosredotochitsya-fd)
+GitHub Pages: https://triganus.github.io/slozhno-sosredotochitsya-fd/
 
 ## Описание проекта
 
